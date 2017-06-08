@@ -6,4 +6,4 @@ Possible temporal conflicts and overlaps of individual courses and modules can b
 
 The data of a course is defined in the XML format. Using the provided Mincer tool, a corresponding SQLite database can be generated from this data. PlüS also offers a static analysis of the data of a course of studies. Here, errors in the data that lead to a course that can not be studied as required are described in a report. The report is divided into numerous categories so that the incorrect data can be identified as easily as possible and thus corrected. The report can also be exported as a PDF file and printed as required.
 
-The planning tool is currently being used by the [Faculty of Philosophy](http://www.philo.hhu.de/) and [Economics](http://www.wiwi.hhu.de/) and the [Faculty of Computer Science](http://www.cs.hhu.de) at the Heinrich-Heine-University in Düsseldorf.
+The planning tool is currently being used by the Faculty of [Philosophy](http://www.philo.hhu.de/), [Economics](http://www.wiwi.hhu.de/) and [Computer Science](http://www.cs.hhu.de) at the Heinrich-Heine-University in Düsseldorf.
