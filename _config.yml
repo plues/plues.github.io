@@ -1,1 +1,19 @@
-theme: jekyll-theme-slate
+languages: ["de", "en"]
+defaultLang: de
+languageNames:
+  de: Deutsch
+  en: English
+
+theme: jekyll-theme-minimal
+title: PlüS
+url: https://plues.github.io/
+github_username: plues
+feature.liquid: true
+
+assets:
+  sources:
+    - _assets/javascripts
+    - _assets/css
+
+gems: 
+  - jekyll-multiple-languages-plugin

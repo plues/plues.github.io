@@ -1,0 +1,10 @@
+site:
+  name: PlüS
+  description: Planungswerkzeug für überschneidungsfreies Studieren
+  keywords: Planungswerkzeug, Studienplan
+
+main:
+  project: Projekt auf Github
+  menu:
+    data: Daten
+    handbook: Handbuch

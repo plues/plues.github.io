@@ -1,0 +1,10 @@
+site:
+  name: PlüS
+  description: Scheduling Tool for overlapping-free studying
+  keywords: Scheduling Tool, Curriculum
+
+main:
+  project: Project on Github
+  menu:
+    data: Data
+    handbook: Handbook

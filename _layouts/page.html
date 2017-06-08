@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="{{ site.lang | default: "de" }}">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="{% t site.description %}"/>
+    <meta name="keywords" content="{% t site.keywords %}"/>
+    <title>{{ site.title | default: site.github.repository_name }}</title>
+
+    <link rel="stylesheet" href="{{ "/stylesheets/styles.css" | prepend: site.baseurl_root }}">
+    <meta name="viewport" content="width=device-width">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <img src="{{ "/images/logo-min.png" | prepend: site.baseurl_root }}" alt="{% t site.description %}"/>
+        <p>{% t site.description %}</p>
+          <p class="view"><a href="https://www.github.com/plues">{% t main.project %}</a></p>
+          <ul>
+            <li><a href="https://github.com/plues/plues/releases/latest">Download <strong>PlüS</strong></a></li>
+            <li><a href="https://github.com/plues/mincer/releases/latest">Download <strong>Mincer</strong></a></li>
+            <li><a href="https://github.com/plues/data/releases/latest">Download <strong>{% t main.menu.data %}</strong></a></li>
+            <li><a href="https://github.com/plues/handbook/releases/latest">Download <strong>{% t main.menu.handbook %}</strong></a></li>
+          </ul>
+      </header>
+      <section>
+        {{ content }}
+      </section>
+      <footer>
+        <a class="active" href="#">{{ site.languageNames[site.lang] }}</a>
+        {% for lang in site.languageNames %}
+        {% if lang[0] == site.lang %} {% continue %} {% endif %}
+        {% if page.namespace %}
+            <a href="{% tl {{ page.namespace }} {{ lang[0] }} %}">{{ lang[1] }}</a>
+        {% else %}
+            <a href="{{ site.baseurl_root }}/{{ lang[0] }}/">{{ lang[1] }}</a>
+        {% endif %}
+        {% endfor %}
+
+        {% if site.github.is_project_page %}
+        <p>This project is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
+        {% endif %}
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+
+  {% if site.google_analytics %}
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        ga('create', '{{ site.google_analytics }}', 'auto');
+        ga('send', 'pageview');
+    </script>
+  {% endif %}
+  </body>
+</html>
