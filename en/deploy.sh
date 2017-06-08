@@ -1,12 +1,7 @@
 #!/bin/bash
 
+# https://github.com/steveklabnik/automatically_update_github_pages_with_travis_example
 set -o errexit -o nounset
-
-if [ "$TRAVIS_BRANCH" != "sourceFiles" ]
-then
-  echo "No deploy. This commit was made against the $TRAVIS_BRANCH and not the sourceFiles."
-  exit 0
-fi
 
 cd _site
 
