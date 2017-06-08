@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Scheduling Tool for overlapping-free studying"/>
+    <meta name="keywords" content="Scheduling Tool, Curriculum"/>
+    <title>PlüS</title>
+
+    <link rel="stylesheet" href="/stylesheets/styles.css">
+    <meta name="viewport" content="width=device-width">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <img src="/images/logo-min.png" alt="Scheduling Tool for overlapping-free studying"/>
+        <p>Scheduling Tool for overlapping-free studying</p>
+          <p class="view"><a href="https://www.github.com/plues">Project on Github</a></p>
+          <ul>
+            <li><a href="https://github.com/plues/plues/releases/latest">Download <strong>PlüS</strong></a></li>
+            <li><a href="https://github.com/plues/mincer/releases/latest">Download <strong>Mincer</strong></a></li>
+            <li><a href="https://github.com/plues/data/releases/latest">Download <strong>Data</strong></a></li>
+            <li><a href="https://github.com/plues/handbook/releases/latest">Download <strong>Handbook</strong></a></li>
+          </ul>
+      </header>
+      <section>
+        <p>The intention of the planning tool for overlapping-free studying is to plan complete courses of a faculty in advance and to check on the possibility of studying. A possibility of studying implies that all students are able to complete their studies in the regular study period prescribed by the curriculum. The calculation of the possibility of studying is based on the use of the B method. For defined data, a mathematical model is generated automatically, which can then be verified. The <a href="http://www3.hhu.de/stups/prob/index.php/Main_Page">ProB</a> tool, which is under development at the <a href="http://www.stups.hhu.de">Chair of Software Engineering and Programming Languages</a> of the Heinrich-Heine-University in Düsseldorf, is used for the verification.</p>
+
+<p>The planning tool provides a complete semester overview of all courses offered at a faculty.
+Individual courses can be postponed within one semester, and special study program combinations can then be tested for the possibility of studying. If a computational combination can be studied, one is able to create a specific curriculum as a PDF file. If students have special emphasis on the presentation of individual courses or have already completed them, it is also possible to take this into account when calculating the course of studies and to create a partial curriculum. Furthermore, all existing combinations can be checked automatically, or all curricula that are possible to study can be generated.
+Possible temporal conflicts and overlaps of individual courses and modules can be automatically identified during planning. In addition, such conflicts can be calculated step by step, allowing the user to more closely examine the cause of the conflict and thus make it easier to resolve them.</p>
+
+<p>The data of a course is defined in the XML format. Using the provided Mincer tool, a corresponding SQLite database can be generated from this data. PlüS also offers a static analysis of the data of a course of studies. Here, errors in the data that lead to a course that can not be studied as required are described in a report. The report is divided into numerous categories so that the incorrect data can be identified as easily as possible and thus corrected. The report can also be exported as a PDF file and printed as required.</p>
+
+<p>The planning tool is currently being used by the <a href="http://www.philo.hhu.de/">Faculty of Philosophy</a> and <a href="http://www.wiwi.hhu.de/">Economics</a> and the <a href="http://www.cs.hhu.de">Faculty of Computer Science</a> at the Heinrich-Heine-University in Düsseldorf.</p>
+
+      </section>
+      <footer>
+        <a class="active" href="#">English</a>
+        
+        
+        
+            <a href="/index/">Deutsch</a>
+        
+        
+         
+
+        
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+
+  
+  </body>
+</html>
