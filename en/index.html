@@ -5,12 +5,17 @@
     <title>PlüS</title>
 </head>
 <body>
-<script>
-    var lang = navigator.language || navigator.userLanguage;
-    if (lang.indexOf('de') == 0)
-        window.location = '/index/';
-    else
-        window.location = '/en/index/';
-</script>
+    <noscript>
+        <a href="/index/">Deutsch</a> | <a href="/en/index/">English</a>
+    </noscript>
+    <script>
+        <!--
+            var lang = navigator.language || navigator.userLanguage;
+            if (lang.indexOf('de') == 0)
+                window.location = '/index/';
+            else
+                window.location = '/en/index/';
+        //-->
+    </script>
 </body>
 </html>
