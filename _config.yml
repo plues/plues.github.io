@@ -17,4 +17,4 @@ assets:
 
 gems:
   - jekyll-multiple-languages-plugin
-exclude: [vendor]
+exclude: [vendor, Gemfile, Gemfile.lock, README.md, deploy.sh]
