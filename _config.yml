@@ -15,5 +15,6 @@ assets:
     - _assets/javascripts
     - _assets/css
 
-gems: 
+gems:
   - jekyll-multiple-languages-plugin
+exclude: [vendor]
