@@ -25,7 +25,7 @@ To install the required tools run:
 ## Deployment
 
 The website is built and deployed using
-[TravisCi](https://travis-ci.org/plues/plues.github.io).
+[Travis CI](https://travis-ci.org/plues/plues.github.io).
 
 Once pushed the `sourceFiles` branch is built and the result is commited and
 pushed to the `master` branch, thus updating the website.
