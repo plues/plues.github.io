@@ -22,11 +22,5 @@ git reset upstream/master
 touch .
 
 git add -A .
-git reset deploy.sh
-git reset Gemfile
-git reset Gemfile.lock
-git reset en/deploy.sh
-git reset en/Gemfile
-git reset en/Gemfile.lock
 git commit -m "Update generated website sources. Build: $TRAVIS_BUILD_NUMBER"
 git push -q upstream HEAD:master > /dev/null 2>&1
