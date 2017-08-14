@@ -27,15 +27,79 @@
           </ul>
       </header>
       <section>
-        <p>The intention of the planning tool for overlapping-free studying is to plan complete courses of a faculty in advance and to check on the possibility of studying. A possibility of studying implies that all students are able to complete their studies in the regular study period prescribed by the curriculum. The calculation of the possibility of studying is based on the use of the B method. For defined data, a mathematical model is generated automatically, which can then be verified. The <a href="http://www3.hhu.de/stups/prob/index.php/Main_Page">ProB</a> tool, which is under development at the <a href="http://www.stups.hhu.de">Chair of Software Engineering and Programming Languages</a> of the Heinrich Heine University in Düsseldorf, is used for the verification.</p>
+        <h1 id="plÜs">PlÜS</h1>
 
-<p>The planning tool provides a complete semester overview of all courses offered at a faculty.
-Individual courses can be postponed within one semester, and special study program combinations can then be tested for the possibility of studying. If a computational combination can be studied, one is able to create a specific curriculum as a PDF file. If students have special emphasis on the presentation of individual courses or have already completed them, it is also possible to take this into account when calculating the course of studies and to create a partial curriculum. Furthermore, all existing combinations can be checked automatically, or all curricula that are possible to study can be generated.
-Possible temporal conflicts and overlaps of individual courses and modules can be automatically identified during planning. In addition, such conflicts can be calculated step by step, allowing the user to more closely examine the cause of the conflict and thus make it easier to resolve them.</p>
+<p>PlÜS is a timetable validation tool created with the goal of importing,
+validating and improving existing university timetables at the <a href="http://hhu.de">Heinrich Heine
+University</a> in Düsseldorf.</p>
 
-<p>The data of a course is defined in the XML format. Using the provided Mincer tool, a corresponding SQLite database can be generated from this data. PlüS also offers a static analysis of the data of a course of studies. Here, errors in the data that lead to a course that can not be studied as required are described in a report. The report is divided into numerous categories so that the incorrect data can be identified as easily as possible and thus corrected. The report can also be exported as a PDF file and printed as required.</p>
+<p>The central feature of PlÜS is to validate the feasibility of timetables from a
+student’s perspictive. In other words, the tool tries to decide if based on the
+given data it is possible to achieve a degree in the timeframe (e.g. four or
+six semesters) prescribed by the curriculum without having to attend two
+classes at the same time.</p>
 
-<p>The planning tool is currently being used by the <a href="http://www.philo.hhu.de/">Faculty of Arts and Humanities</a>, the <a href="http://www.wiwi.hhu.de/">Faculty of Business Administration and Economics</a> and the Institute of <a href="http://www.cs.hhu.de">Computer Science</a> at the Faculty of Mathematics and Natural Sciences at the Heinrich Heine University in Düsseldorf.</p>
+<p><img src="/images/timetable.png" alt="PlUES Timetable Validation Tool" /></p>
+
+<h2 id="features">Features</h2>
+
+<p>The main features of the PlUES tool are to:</p>
+<ul>
+  <li>check the feasibility of:
+    <ul>
+      <li>a single course</li>
+      <li>all courses at once</li>
+    </ul>
+  </li>
+  <li>generate PDF-timetables for:
+    <ul>
+      <li>a single feasible course</li>
+      <li>all courses at once</li>
+    </ul>
+  </li>
+  <li>detect a conflict source for infeasible courses.</li>
+</ul>
+
+<h1 id="architecture">Architecture</h1>
+
+<p>The core validation logic is implemented using the B-Method and the
+<a href="http://www3.hhu.de/stups/prob/index.php/Main_Page">ProB</a> tool.
+The B model describes the constaints a curriculum must satisfy in order to be
+feasible for a student.
+ProB is used to solve these constraints and search for valid timetables that
+satisfy the curriculum rules.</p>
+
+<h1 id="how-it-works">How it works</h1>
+
+<p>The tool provides a complete semester overview of all courses offered at a faculty.
+Individual courses can be postponed within one semester, and special study
+program combinations can then be tested for the possibility of studying. If a
+computational combination can be studied, one is able to create a specific
+curriculum as a PDF file. If students have special emphasis on the presentation
+of individual courses or have already completed them, it is also possible to
+take this into account when calculating the course of studies and to create a
+partial curriculum. Furthermore, all existing combinations can be checked
+automatically, or all curricula that are possible to study can be generated.
+Possible temporal conflicts and overlaps of individual courses and modules can
+be automatically identified during planning. In addition, such conflicts can be
+calculated step by step, allowing the user to more closely examine the cause of
+the conflict and thus make it easier to resolve them.</p>
+
+<p>The data of a course is defined in the XML format. Using the provided Mincer
+tool, a corresponding SQLite database can be generated from this data. PlüS
+also offers a static analysis of the data of a course of studies. Here, errors
+in the data that lead to a course that can not be studied as required are
+described in a report. The report is divided into numerous categories so that
+the incorrect data can be identified as easily as possible and thus corrected.
+The report can also be exported as a PDF file and printed as required.</p>
+
+<p>The planning tool is currently being used by the <a href="http://www.philo.hhu.de/">Faculty of Arts and
+Humanities</a>, the <a href="http://www.wiwi.hhu.de/">Faculty of Business Administration
+and Economics</a> and the <a href="http://www.cs.hhu.de">Computer
+Science</a> Department at the <a href="http://www.math-nat-fak.hhu.de/">Faculty of Mathematics and
+Natural Sciences</a> at the <a href="http://hhu.de">Heinrich Heine
+University</a> in Düsseldorf.</p>
+
 
       </section>
       <footer>
@@ -52,7 +116,5 @@ Possible temporal conflicts and overlaps of individual courses and modules can b
         <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
       </footer>
     </div>
-
-  
   </body>
 </html>
