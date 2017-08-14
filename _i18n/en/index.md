@@ -1,3 +1,5 @@
+<!-- vim: set spell : -->
+<!-- vim: set spelllang=en : -->
 # PlÜS
 
 PlÜS is a timetable validation tool created with the goal of importing,
