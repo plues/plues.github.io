@@ -7,8 +7,8 @@ validating and improving existing university timetables at the [Heinrich Heine
 University](http://hhu.de) in Düsseldorf.
 
 The central feature of PlÜS is to validate the feasibility of timetables from a
-student's perspictive. In other words, the tool tries to decide if based on the
-given data it is possible to achieve a degree in the timeframe (e.g. four or
+student's perspective. In other words, the tool tries to decide if, based on the
+given data, it is possible to achieve a degree in the timeframe (e.g. four or
 six semesters) prescribed by the curriculum without having to attend two
 classes at the same time.
 
@@ -29,7 +29,7 @@ The main features of the PlUES tool are to:
 
 The core validation logic is implemented using the B-Method and the
 [ProB](http://www3.hhu.de/stups/prob/index.php/Main_Page) tool.
-The B model describes the constaints a curriculum must satisfy in order to be
+The B model describes the constraints a curriculum must satisfy in order to be
 feasible for a student.
 ProB is used to solve these constraints and search for valid timetables that
 satisfy the curriculum rules.
