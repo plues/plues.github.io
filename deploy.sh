@@ -12,8 +12,8 @@ set -o errexit -o nounset
 cd _site
 
 git init
-git config --global user.email "travis@travis-ci.org"
-git config --global user.name "Travis"
+git config user.email "travis@travis-ci.org"
+git config user.name "Travis"
 
 git remote add upstream "https://$GH_TOKEN@github.com/plues/plues.github.io.git" > /dev/null 2>&1
 git fetch upstream
