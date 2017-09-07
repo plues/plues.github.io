@@ -28,7 +28,7 @@ Die grundsätzlichen Eigenschaften des PlÜS Werkzeug sind die:
 Die Validierung basiert im Kern auf der Verwendung der B-Methode und dem
 [ProB](http://www3.hhu.de/stups/prob/index.php/Main_Page) Werkzeug.
 Das B Model beschreibt die Eigenschaften die ein Studienplan erfüllen muss, um
-als Studierbar zu gelten.
+als studierbar zu gelten.
 ProB wird hierbei verwendet um diese Eigenschaften zu überprüfen und
 entsprechende Studienpläne zu finden, welche die Regeln eines vorgeschriebenen
 Curriculums erfüllen.
